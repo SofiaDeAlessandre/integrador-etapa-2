@@ -1,35 +1,16 @@
 import './NavBar.scss'
+import menuItems from '../constants/menuItems'
+import NavItem from './NavItem'
 
 const NavBar = () => {
   return (
     <nav className="nav-bar">
         <ul className="nav-bar__nav-list">
-          <li className="nav-bar__nav-item">
-            <a href="index.html" className="nav-bar__nav-link">
-              Inicio
-            </a>
-          </li>
-          <li className="nav-bar__nav-item">
-            <a href="" className="nav-bar__nav-link">
-              Alta
-            </a>
-          </li>
-          <li className="nav-bar__nav-item">
-            <a
-              href="/src/pages/nosotros/nosotros.html"
-              className="nav-bar__nav-link"
-            >
-              Nosotros
-            </a>
-          </li>
-          <li className="nav-bar__nav-item">
-            <a
-              href="/src/pages/contacto/contacto.html"
-              className="nav-bar__nav-link"
-            >
-              Contacto
-            </a>
-          </li>
+            {
+                menuItems.map((item) => (
+                    <NavItem item={item} key={item.id} />
+                ))
+            }
         </ul>
       </nav>
   )
