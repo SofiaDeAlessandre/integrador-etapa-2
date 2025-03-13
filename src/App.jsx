@@ -1,7 +1,15 @@
+import { BrowserRouter } from "react-router"
+import Rutas from "./routes/Rutas"
+import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
-    <div>App</div>
+    <BrowserRouter>
+    <NavBar/>
+    <Rutas/>
+    <Footer/>
+    </BrowserRouter>
   )
 }
 
