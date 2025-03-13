@@ -1,0 +1,39 @@
+:root {
+    --firstColor: rgb(231, 195, 187);
+    --secondColor: rgb(174, 144, 139);
+    --thirdColor: rgb(48, 54, 23);
+    --fourthColor: rgb(248, 241, 240);
+    --fifthColor: black;
+  }
+  
+  .section-cards {
+    background-color: var(--fourthColor);
+    padding: 1rem;
+  
+    &__header h1 {
+      text-align: center;
+      color: var(--fifthColor);
+      animation: fadeInScale 2s ease forwards;
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    @keyframes fadeInScale {
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+  
+  .cards-container {
+    background-color: var(--fourthColor);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
