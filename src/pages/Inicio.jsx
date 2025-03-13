@@ -1,10 +1,7 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Card from "../components/Card";
 
 const Inicio = () => {
   return (
-    <>
-    <Header/>
           <main>
         <section className="section-cards">
           <header className="section-cards__header">
@@ -14,10 +11,8 @@ const Inicio = () => {
         </section>
 
         <section className="cards-container" id="container-products"></section>
-      </main>
-<Footer/>
-      
-    </>
+        <Card/>
+      </main>    
   );
 };
 
