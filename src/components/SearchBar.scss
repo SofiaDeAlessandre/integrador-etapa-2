@@ -1,0 +1,71 @@
+ /*-----------------------------------------*/
+  /* SEARCH BAR*/
+  /*-----------------------------------------*/
+  
+  .search-bar {
+    display: flex;
+    background-color: var(--firstColor);
+    justify-content: space-around;
+  
+    &__logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--thirdColor);
+      margin-left: 10px;
+    }
+  
+    &__mode {
+      background-color: var(--firstColor);
+      border: none;
+    }
+  
+    &__form-container {
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 5px;
+    }
+  
+    &__form-label {
+      background-color: var(--firstColor);
+      color: var(--fifthColor);
+      display: none;
+    }
+  
+    &__form-search {
+      background-color: var(--firstColor);
+      border-radius: 5px;
+      border-color: var(--secondColor);
+      color: var(--fifthColor);
+      width: 200px;
+      margin: auto;
+    }
+  
+    &__form-submit {
+      background-color: var(--secondColor);
+      padding: 5px;
+      border-radius: 5px;
+      border-color: var(--secondColor);
+      margin: auto;
+      margin-bottom: 5px;
+      color: var(--fourthColor);
+      &:hover {
+        cursor: pointer;
+        background-color: var(--firstColor);
+        color: var(--fifthColor);
+      }
+    }
+  
+    &__carrito-container {
+      flex: 0 0 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--fifthColor);
+    }
+  }
+  

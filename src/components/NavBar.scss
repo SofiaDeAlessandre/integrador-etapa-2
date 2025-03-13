@@ -1,0 +1,45 @@
+/*-----------------------------------------*/
+  /* NAVBAR*/
+  /*-----------------------------------------*/
+  
+  .nav-bar {
+    background-color: var(--firstColor);
+    display: none;
+  
+    &__nav-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style-type: none;
+  
+      @media screen and (min-width: 992px) {
+        & {
+          flex-direction: row;
+        }
+      }
+    }
+  
+    &__nav-item {
+      text-align: center;
+    }
+  
+    &__nav-link {
+      display: block;
+      background-color: var(--firstColor);
+      padding: 1rem 2rem;
+      color: var(--fifthColor);
+      text-decoration: none;
+  
+      &:hover {
+        text-shadow: 3px 3px 10px var(--fifthColor);
+        color: var(--fourthColor);
+      }
+    }
+  
+    @media screen and (min-width: 992px) {
+      & {
+        display: block;
+      }
+    }
+  }
+  
