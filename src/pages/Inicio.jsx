@@ -1,19 +1,25 @@
+import { useContext } from "react";
 import Card from "../components/Card";
-import './Inicio.scss'
+import "./Inicio.scss";
+import ProductosContext from "../contexts/ProductosContext";
 
 const Inicio = () => {
-  return (
-          <main>
-        <section className="section-cards">
-          <header className="section-cards__header">
-            <h1>¡Bienvenidos a Boutique!</h1>
-            <p>Se encontraron x productos</p>
-          </header>
-        </section>
+  const { productos } = useContext(ProductosContext);
 
-        <section className="cards-container" id="container-products"></section>
-        <Card/>
-      </main>    
+  return (
+    <main>
+      <section className="section-cards">
+        <header className="section-cards__header">
+          <h1>¡Bienvenidos a Boutique!</h1>
+          <p>Se encontraron x productos</p>
+        </header>
+      </section>
+
+      <section className="cards-container" id="container-products">
+        {productos && productos.map((producto) => (<Card producto={producto} key={producto.id} />))}
+      </section>
+      {/* <Card/> */}
+    </main>
   );
 };
 
