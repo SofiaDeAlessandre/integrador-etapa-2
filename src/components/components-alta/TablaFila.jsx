@@ -1,4 +1,18 @@
-const TablaFila = ( {producto}) => {
+import { useContext } from "react";
+import ProductosContext from "../../contexts/ProductosContext";
+
+const TablaFila = ( {producto} ) => {
+
+  const {eliminarProductoContext, setProductoAEditar} = useContext(ProductosContext)
+
+const handleEliminar = (id) => {
+  eliminarProductoContext(id)
+} 
+
+const handleEditar = (producto) => {
+  setProductoAEditar(producto)
+}
+
   return (
     <tr>
       <td>{producto.nombre}</td>
@@ -11,11 +25,11 @@ const TablaFila = ( {producto}) => {
         <img src={producto.foto} alt={producto.nombre}/>
         
         </td>
-      <td>{producto.envio}</td>
+      <td>{producto.envio ? 'si' : 'no'}</td>
       <td>
         <button>Ver</button>
-        <button>Editar</button>
-        <button>Borrar</button>
+        <button onClick={() => handleEditar(producto)}>Editar</button>
+        <button onClick={() => handleEliminar(producto.id)}>Borrar</button>
       </td>
     </tr>
   );
