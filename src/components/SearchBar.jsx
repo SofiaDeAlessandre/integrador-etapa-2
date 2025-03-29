@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './SearchBar.scss'
 
 const SearchBar = () => {
@@ -20,7 +21,7 @@ const SearchBar = () => {
           </button>
         </form>
         <div className="search-bar__carrito-container">
-          <i className="fa-solid fa-cart-shopping"></i>
+          <Link to='/carrito'><i className="fa-solid fa-cart-shopping"></i></Link>
         </div>
 
         <div className="menu-toogle">

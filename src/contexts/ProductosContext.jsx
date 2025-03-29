@@ -44,9 +44,9 @@ console.error('[crearProductoContext]', error)
 
 
  const actualizarProductoContext = async (productoAEditar) => {
+
  try {
   
-
   const options = {
     method: 'PUT',
     headers: { 'content-type': 'application/json'},
@@ -79,7 +79,7 @@ setProductos(nuevoEstadoProductos)
     const nuevoEstadoProductos = productos.filter(prod => prod.id !== id)
     setProductos(nuevoEstadoProductos)
   } catch (error) {
-    
+    console.error('[eliminarProductoContext]', error)
   }
  }
 
