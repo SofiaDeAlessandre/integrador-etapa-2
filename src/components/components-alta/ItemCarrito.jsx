@@ -8,7 +8,7 @@ const ItemCarrito = ({producto}) => {
     const { eliminarProductoDelCarritoContext } = useContext(CarritoContext)
 
     const handleEliminar = (id) => {
-        //eliminarProductoDelCarritoContext(id)
+        eliminarProductoDelCarritoContext(id)
     }
  
 return (

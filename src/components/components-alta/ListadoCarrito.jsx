@@ -2,21 +2,22 @@ import { useContext } from "react"
 
 import ItemCarrito from "./ItemCarrito"
 import CarritoContext from "../../contexts/CarritoContext"
+import './ListadoCarrito.scss'
+
 
 const ListadoCarrito = () => {
 
-    const { carrito } = useContext(CarritoContext)
+    const { carrito, limpiarCarritoContext } = useContext(CarritoContext)
     
-    console.log(carrito)
+    
 
     const handleComprar = () => {
-        console.log('Comprando...')
+        
         //guardarCarritoContext()
     }
     
     const handleLimpiarCarrito = () => {
-        console.log('Vaciando carrito...')
-        //limpiarCarritoContext()
+        limpiarCarritoContext()
     }
 
   return (

@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    min-height: 100vh;
+  }
+  
+  .main-header {
+    align-self: start;
+  }
+  
+  .footer {
+    align-self: end;
+  }
+  
+  :root {
+    --firstColor: rgb(231, 195, 187);
+    --secondColor: rgb(174, 144, 139);
+    --thirdColor: rgb(48, 54, 23);
+    --fourthColor: rgb(248, 241, 240);
+    --fifthColor: black;
+  }
+  
+  /*-----------------------------------------*/
+  /*MAIN FORM*/
+  /*-----------------------------------------*/
+  .main-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    @media screen and (min-width: 768px) {
+      & {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  iframe {
+    width:300;
+        height:150;
+        border: 0;
+        
+  }

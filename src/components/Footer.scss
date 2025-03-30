@@ -1,0 +1,42 @@
+/*-----------------------------------------*/
+/*FOOTER*/
+/*-----------------------------------------*/
+
+:root {
+    --firstColor: rgb(231, 195, 187);
+    --secondColor: rgb(174, 144, 139);
+    --thirdColor: rgb(48, 54, 23);
+    --fourthColor: rgb(248, 241, 240);
+    --fifthColor: black;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--firstColor);
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 0px -8px 20px var(--firstColor);
+    position: relative;
+    z-index: 10;
+  
+    &__section-icons-imgs {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+  
+    &__icons {
+      display: flex;
+      gap: 0.5em;
+    }
+  
+    &__payment-method {
+      display: flex;
+      gap: 2em;
+    }
+  }
+  
