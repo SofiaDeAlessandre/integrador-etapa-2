@@ -20,8 +20,10 @@
     align-items: center;
     gap: 1em;
     box-shadow: 0px -8px 20px var(--firstColor);
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
   
     &__section-icons-imgs {
       display: flex;

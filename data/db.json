@@ -180,6 +180,44 @@
         "envio": false,
         "cantidad": 1
       }
-    ]
+    ],
+    {
+      "0": {
+        "id": "8",
+        "nombre": "Producto X",
+        "precio": "2333",
+        "stock": "2",
+        "marca": "Sorny",
+        "categoria": "Electro",
+        "detalles": "Piola. 8k",
+        "foto": "imgs/apple-iphone-11-pro-max.jpg",
+        "envio": true,
+        "cantidad": 1
+      },
+      "1": {
+        "id": "9",
+        "nombre": "Manzana",
+        "precio": "22",
+        "stock": "2",
+        "marca": "Moño Azul",
+        "categoria": "Frutas y Verduras",
+        "detalles": "Alta manzana, no papa",
+        "foto": "imgs/manzanita.jpg",
+        "envio": true,
+        "cantidad": 1
+      },
+      "2": {
+        "id": "2bda",
+        "nombre": "pc",
+        "precio": "1200",
+        "stock": "10",
+        "categoria": "Tecnología",
+        "detalle": "pcccc",
+        "foto": "https://www.example.com/foto2.jpg",
+        "envio": true,
+        "cantidad": 1
+      },
+      "id": "249b"
+    }
   ]
 }

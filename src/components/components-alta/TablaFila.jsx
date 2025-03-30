@@ -1,7 +1,10 @@
 import { useContext } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
+import { useNavigate } from "react-router";
 
 const TablaFila = ( {producto} ) => {
+
+ const navigate  = useNavigate()
 
   const {eliminarProductoContext, setProductoAEditar} = useContext(ProductosContext)
 
@@ -11,6 +14,10 @@ const handleEliminar = (id) => {
 
 const handleEditar = (producto) => {
   setProductoAEditar(producto)
+}
+
+const handleVer = (id) => {
+navigate(`/alta/detalle/${id}`)
 }
 
   return (
@@ -27,7 +34,7 @@ const handleEditar = (producto) => {
         </td>
       <td>{producto.envio ? 'si' : 'no'}</td>
       <td>
-        <button>Ver</button>
+        <button onClick={() => handleVer(producto.id)}>Ver</button>
         <button onClick={() => handleEditar(producto)}>Editar</button>
         <button onClick={() => handleEliminar(producto.id)}>Borrar</button>
       </td>
