@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
 import { useNavigate } from "react-router";
+import Swal from "sweetalert2";
 
 const TablaFila = ( {producto} ) => {
 
@@ -8,8 +9,28 @@ const TablaFila = ( {producto} ) => {
 
   const {eliminarProductoContext, setProductoAEditar} = useContext(ProductosContext)
 
-const handleEliminar = (id) => {
-  eliminarProductoContext(id)
+const handleEliminar = (id) => { 
+  
+  Swal.fire({
+    title: "¿Estás seguro?",
+    text: "¡No podrás revertirlo!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "rgb(174, 144, 139)",
+    cancelButtonColor: "rgb(132, 109, 104)",
+    confirmButtonText: "Sí, ¡borrar!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      eliminarProductoContext(id)
+      Swal.fire({
+        title: "¡Eliminado!",
+        text: "El producto fue eliminado.",
+        icon: "success"
+      });
+    }
+  });
+  
+  
 } 
 
 const handleEditar = (producto) => {

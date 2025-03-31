@@ -1,8 +1,74 @@
 {
   "productos": [
     {
-      "id": "7",
-      "nombre": "DJI Mavic 2 pro (editado)",
+      "nombre": "IPhone 15 Pro Max",
+      "foto": "imgs/iphone-15-pro.max.webp",
+      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "precio": 250.5,
+      "stock": "4444",
+      "marca": "Apple",
+      "categoria": "celulares",
+      "id": 1,
+      "envio": false
+    },
+    {
+      "nombre": "IPhone 12",
+      "foto": "imgs/iphone-12.webp",
+      "detalles": "Quasi cupiditate quisquam facere molestiae",
+      "precio": 240.3,
+      "stock": "4",
+      "marca": "Apple",
+      "categoria": "celulares",
+      "id": 2,
+      "envio": true
+    },
+    {
+      "nombre": "Auriculares Sony",
+      "foto": "imgs/auriculares-sony.webp",
+      "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+      "precio": 985,
+      "stock": 4,
+      "marca": "Sleek Cotton Chips",
+      "categoria": "Refined",
+      "id": 3,
+      "envio": false
+    },
+    {
+      "nombre": "Camara Canon",
+      "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "foto": "imgs/camara-canon.webp",
+      "precio": 678,
+      "stock": 7,
+      "marca": "Rustic Soft Tuna",
+      "categoria": "Generic",
+      "id": 4,
+      "envio": true
+    },
+    {
+      "nombre": "Samsung",
+      "detalles": "Facere molestiae odio neque rerum provident voluptas",
+      "foto": "imgs/celular-samsung.webp",
+      "precio": 1200,
+      "stock": 4,
+      "marca": "Samsung",
+      "categoria": "celulares",
+      "id": 5,
+      "envio": true
+    },
+    {
+      "id": 6,
+      "nombre": "Chromecast",
+      "precio": 332.22,
+      "stock": 4,
+      "marca": "Google",
+      "categoria": "Electronica",
+      "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+      "foto": "imgs/chromecast-google.webp",
+      "envio": true
+    },
+    {
+      "id": 7,
+      "nombre": "DJI Mavic 2 pro",
       "precio": 333.22,
       "stock": 2,
       "marca": "DJI",
@@ -12,35 +78,25 @@
       "envio": false
     },
     {
-      "id": "8",
-      "nombre": "Producto X",
+      "id": 8,
+      "nombre": "Smart tv",
       "precio": "2333",
       "stock": "2",
-      "marca": "Sorny",
+      "marca": "Samsung",
       "categoria": "Electro",
       "detalles": "Piola. 8k",
-      "foto": "imgs/apple-iphone-11-pro-max.jpg",
+      "foto": "imgs/smart-tv.avif",
       "envio": true
     },
     {
-      "id": "9",
-      "nombre": "Manzana",
+      "id": 9,
+      "nombre": "PlayStation 5",
       "precio": "22",
       "stock": "2",
-      "marca": "Moño Azul",
-      "categoria": "Frutas y Verduras",
+      "marca": "PlayStation",
+      "categoria": "Entretenimiento",
       "detalles": "Alta manzana, no papa",
-      "foto": "imgs/manzanita.jpg",
-      "envio": true
-    },
-    {
-      "id": null,
-      "nombre": "Juanmmmmmmm",
-      "precio": "1200",
-      "stock": "10",
-      "categoria": "Tecnología",
-      "detalle": "pcccc",
-      "foto": "https://cdn.pixabay.com/photo/2025/02/26/09/58/bird-9432600_1280.jpg",
+      "foto": "imgs/ps5.jpg",
       "envio": true
     }
   ],
@@ -170,44 +226,6 @@
         "envio": false,
         "cantidad": 1
       }
-    ],
-    {
-      "0": {
-        "id": "8",
-        "nombre": "Producto X",
-        "precio": "2333",
-        "stock": "2",
-        "marca": "Sorny",
-        "categoria": "Electro",
-        "detalles": "Piola. 8k",
-        "foto": "imgs/apple-iphone-11-pro-max.jpg",
-        "envio": true,
-        "cantidad": 1
-      },
-      "1": {
-        "id": "9",
-        "nombre": "Manzana",
-        "precio": "22",
-        "stock": "2",
-        "marca": "Moño Azul",
-        "categoria": "Frutas y Verduras",
-        "detalles": "Alta manzana, no papa",
-        "foto": "imgs/manzanita.jpg",
-        "envio": true,
-        "cantidad": 1
-      },
-      "2": {
-        "id": "2bda",
-        "nombre": "pc",
-        "precio": "1200",
-        "stock": "10",
-        "categoria": "Tecnología",
-        "detalle": "pcccc",
-        "foto": "https://www.example.com/foto2.jpg",
-        "envio": true,
-        "cantidad": 1
-      },
-      "id": "249b"
-    }
+    ]
   ]
 }

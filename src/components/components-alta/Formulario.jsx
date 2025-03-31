@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
+import './Formulario.scss'
 
 const Formulario = () => {
 
@@ -54,7 +55,9 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
     <>
       <h2>Agregar: Editar</h2>
       <form className="form__alta" onSubmit={handleSubmit}>
-        <div>
+      <fieldset className="form__alta__fieldset">
+      <legend className="form__alta__legend">Datos de producto</legend>
+        <div className="form__alta__nombre">
           <label htmlFor="lbl-nombre">Nombre</label>
           <input
             type="text"
@@ -65,7 +68,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__precio">
           <label htmlFor="lbl-precio">Precio</label>
           <input
             type="text"
@@ -76,7 +79,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__stock">
           <label htmlFor="lbl-stock">Stock</label>
           <input
             type="text"
@@ -87,7 +90,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__marca">
           <label htmlFor="lbl-marca">Marca</label>
           <input
             type="text"
@@ -98,7 +101,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__categoria">
           <label htmlFor="lbl-categoria">Categoria</label>
           <input
             type="text"
@@ -109,7 +112,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__detalles" >
           <label htmlFor="lbl-detalle">Detalles</label>
           <input
             type="text"
@@ -120,7 +123,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__foto"> 
           <label htmlFor="lbl-foto">Foto</label>
           <input
             type="text"
@@ -131,7 +134,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
 
-        <div>
+        <div className="form__alta__envio" >
           <label htmlFor="lbl-envio">Envío</label>
           <input
             type="checkbox"
@@ -141,9 +144,11 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
             onChange={handleChange}
           />
         </div>
-
-        <button type="submit">Guardar : Editar</button>
-        <button type="reset" onClick={handleReset}>Limpiar</button>
+        
+        <button className="form__alta__btn"  type="submit">Guardar : Editar</button>
+        <button className="form__alta__btn" type="reset" onClick={handleReset}>Limpiar</button>
+        
+        </fieldset>
       </form>
     </>
   );
