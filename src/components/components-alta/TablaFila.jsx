@@ -50,7 +50,7 @@ navigate(`/alta/detalle/${id}`)
       <td>{producto.categoria}</td>
       <td>{producto.detalles}</td>
       <td>
-        <img src={producto.foto} alt={producto.nombre}/>
+        <img className="img-tabla" src={producto.foto} alt={producto.nombre}/>
         
         </td>
       <td>{producto.envio ? 'si' : 'no'}</td>

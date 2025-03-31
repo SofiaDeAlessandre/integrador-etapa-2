@@ -1,0 +1,25 @@
+
+  .main__acerca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    background-image: url(/imgs/iphone-12.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(225, 193, 193, 0.5);
+    background-blend-mode: lighten;
+    min-height: 100vh;
+  }
+  
+  .section__acerca {
+    &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+  }
+  

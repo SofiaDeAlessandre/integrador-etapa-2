@@ -19,7 +19,7 @@ const Inicio = ({filterText}) => {
   useTitulo('Inicio')
 
   return (
-    <main>
+    <main className="main-section-cards">
       <section className="section-cards">
         <header className="section-cards__header">
           <h1>¡Bienvenidos a Boutique!</h1>
