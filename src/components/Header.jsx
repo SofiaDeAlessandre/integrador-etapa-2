@@ -2,12 +2,16 @@ import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
 import './Header.scss'
 
-const Header = () => {
+
+const Header = ({filterText,  onFilterTextChange}) => {
+  
+
   return (
     <header className="main-header">
       <input type="checkbox" id="menu" />
       <NavBar />
-      <SearchBar />
+      <SearchBar filterText={filterText}
+        onFilterTextChange={onFilterTextChange}/>
     </header>
   );
 };

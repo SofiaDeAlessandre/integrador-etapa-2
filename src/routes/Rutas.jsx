@@ -7,11 +7,11 @@ import NoEncontrado from "../pages/NoEncontrado";
 import Contacto from "../pages/Contacto";
 import ProductosDetalle from "../components/components-alta/ProductosDetalle";
 
-const Rutas = () => {
+const Rutas = ({filterText}) => {
   const hookRutas = useRoutes([
     {
       path: "/",
-      element: <Inicio />,
+      element: <Inicio filterText={filterText}/>,
     },
     {
       path: "/alta",

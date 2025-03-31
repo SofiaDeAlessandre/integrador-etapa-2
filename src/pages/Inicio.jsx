@@ -4,8 +4,17 @@ import "./Inicio.scss";
 import ProductosContext from "../contexts/ProductosContext";
 import useTitulo from "../hooks/useTitulo";
 
-const Inicio = () => {
+const Inicio = ({filterText}) => {
   const { productos } = useContext(ProductosContext);
+
+  // productos?.forEach((producto) => {
+  //   if (producto.nombre.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+  //     return;
+  //   }})
+
+  const productosFiltrados = productos?.filter((producto) =>
+    producto.nombre.toLowerCase().includes(filterText.toLowerCase())
+  );
 
   useTitulo('Inicio')
 
@@ -19,7 +28,13 @@ const Inicio = () => {
       </section>
 
       <section className="cards-container" id="container-products">
-        {productos && productos.map((producto) => (<Card producto={producto} key={producto.id} />))}
+        {/* {productos && productos.map((producto) => (<Card producto={producto} key={producto.id} />))} */}
+        {productosFiltrados?.length > 0 ? (
+          productosFiltrados.map((producto) => (
+            <Card producto={producto} key={producto.id} />
+          ))) : (
+            <p>No se encontraron productos.</p>
+          )}
       </section>
       {/* <Card/> */}
     </main>

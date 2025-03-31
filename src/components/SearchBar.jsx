@@ -3,7 +3,7 @@ import './SearchBar.scss'
 import CarritoContext from '../contexts/CarritoContext';
 import { useContext } from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({onFilterTextChange, filterText}) => {
   const {  cantidadTotalProductos } = useContext(CarritoContext);
   return (
     <div className="search-bar">
@@ -18,10 +18,12 @@ const SearchBar = () => {
             type="search"
             id="busqueda"
             className="search-bar__form-search"
+            value={filterText}
+            onChange={(e) => onFilterTextChange(e.target.value)}
           />
-          <button type="submit" className="search-bar__form-submit">
+          {/* <button onClick={(e) => onFilterTextChange(e.target.value)} type="submit" className="search-bar__form-submit">
             Buscar
-          </button>
+          </button> */}
         </form>
         <div className="search-bar__carrito-container">
         <Link className="search-bar__carrito-container__link" to="/carrito">
