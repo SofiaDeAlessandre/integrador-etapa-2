@@ -65,7 +65,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: var(--fifthColor);
-    }
-  }
+      position: relative;
+    display: inline-block;
+      &__link {
+        color: var(--fifthColor);
+        position: relative;
+    display: inline-block;
+}}
+
+.fa-solid.fa-cart-shopping {
+  font-size: 1.5rem; 
+
+}
+.search-bar__carrito-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+      }
+    
+    
+  
   

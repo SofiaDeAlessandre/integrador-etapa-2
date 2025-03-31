@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useState, useEffect } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { peticionesHttp } from "../helpers/peticiones-http";
 
@@ -9,7 +9,7 @@ const CarritoProvider = ({ children }) => {
   const [agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, carrito] =
     useLocalStorage("carrito", []);
 
-
+  
   function elProductoEstaEnElCarrito(producto) {
     const nuevoArray = carrito.filter((prod) => prod.id === producto.id);
     return nuevoArray.length;
@@ -28,6 +28,7 @@ const CarritoProvider = ({ children }) => {
       productoDeCarrito.cantidad++;
       window.localStorage.setItem("carrito", JSON.stringify(carrito));
     }
+    
   };
 
 
@@ -57,12 +58,15 @@ limpiarCarrito()
 
   }
 
+  const cantidadTotalProductos = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+
   const data = {
     agregarProductoAlCarritoContext,
     eliminarProductoDelCarritoContext,
     guardarCarritoBackendContext,
     limpiarCarritoContext,
     carrito,
+    cantidadTotalProductos
   };
 
   return (

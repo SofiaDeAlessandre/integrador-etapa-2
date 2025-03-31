@@ -22,6 +22,8 @@ return (
 <td>
     <button onClick={() => handleEliminar(producto.id)}>Eliminar</button>
 </td>
+<td>{producto.cantidad*producto.precio}</td>
+
     </tr>
 )
 

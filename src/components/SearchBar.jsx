@@ -1,7 +1,10 @@
 import { Link } from 'react-router'
 import './SearchBar.scss'
+import CarritoContext from '../contexts/CarritoContext';
+import { useContext } from 'react';
 
 const SearchBar = () => {
+  const {  cantidadTotalProductos } = useContext(CarritoContext);
   return (
     <div className="search-bar">
         <div className="search-bar__logo-container">
@@ -21,9 +24,15 @@ const SearchBar = () => {
           </button>
         </form>
         <div className="search-bar__carrito-container">
-          <Link to='/carrito'><i className="fa-solid fa-cart-shopping"></i></Link>
-        </div>
-
+        <Link className="search-bar__carrito-container__link" to="/carrito">
+          <i className="fa-solid fa-cart-shopping"></i>
+          {cantidadTotalProductos > 0 && (
+            <div className="search-bar__carrito-badge">
+              {cantidadTotalProductos}
+            </div>
+          )}
+        </Link>
+      </div>
         <div className="menu-toogle">
           <label htmlFor="menu" className="menu-toogle__label">
             <span className="menu-toogle__top-bread"></span>
