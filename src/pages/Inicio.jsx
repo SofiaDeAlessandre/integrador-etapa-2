@@ -23,7 +23,7 @@ const Inicio = ({filterText}) => {
       <section className="section-cards">
         <header className="section-cards__header">
           <h1>¡Bienvenidos a Boutique!</h1>
-          <p>Se encontraron x productos</p>
+          <p>  Se encontró {productosFiltrados?.length > 1 ? `${productosFiltrados?.length} productos` : `${productosFiltrados?.length} producto`}</p>
         </header>
       </section>
 

@@ -42,16 +42,6 @@
       "detalle": "pcccc",
       "foto": "https://cdn.pixabay.com/photo/2025/02/26/09/58/bird-9432600_1280.jpg",
       "envio": true
-    },
-    {
-      "id": "2bda",
-      "nombre": "pc",
-      "precio": "1200",
-      "stock": "10",
-      "categoria": "Tecnología",
-      "detalle": "pcccc",
-      "foto": "https://www.example.com/foto2.jpg",
-      "envio": true
     }
   ],
   "carrito": [

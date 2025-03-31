@@ -53,9 +53,9 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
   return (
     <>
       <h2>Agregar: Editar</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="form__alta" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="lbl-nombre">nombre</label>
+          <label htmlFor="lbl-nombre">Nombre</label>
           <input
             type="text"
             id="lbl-nombre"
