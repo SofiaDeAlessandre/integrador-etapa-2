@@ -13,7 +13,7 @@ const ProductosDetalle = () => {
   }, []);
 
   const getOne = async (id) => {
-    const urlGetOne = "http://localhost:8080/productos/" + id;
+    const urlGetOne = "https://67ec5e9baa794fb3222da722.mockapi.io/api/v1/productos/" + id;
     try {
       const res = await fetch(urlGetOne);
       if (!res.ok) {
