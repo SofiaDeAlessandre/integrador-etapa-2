@@ -74,7 +74,7 @@
       "marca": "DJI",
       "categoria": "Drones",
       "detalles": "Drone con cámara Hasselblad de 1' CMOS que captura video 4K a 30p y 10 bits de profundidad de color, con un sensor de 20MP y apertura ajustable, además de funciones avanzadas como Hyperlapse y ActiveTrack.",
-      "foto": "imgs/dji-mavic-2-pro.jpg",
+      "foto": "imgs/dji-mavic-2-pro.webp",
       "envio": false
     },
     {
@@ -85,7 +85,7 @@
       "marca": "Samsung",
       "categoria": "Electro",
       "detalles": "Ofrece más que solo imagen, con conexión a internet, sistema operativo Tizen, aplicaciones y funcionalidades como SmartThings para integrar con tu hogar inteligente",
-      "foto": "imgs/smart-tv.avif",
+      "foto": "imgs/smart-tv.webp",
       "envio": true
     },
     {
@@ -96,7 +96,7 @@
       "marca": "PlayStation",
       "categoria": "Entretenimiento",
       "detalles": "Es la consola de videojuegos de última generación de Sony, con dos modelos: la PS5 estándar con lector de discos y la PS5 Digital Edition sin lector. Ofrece tiempos de carga rápidos gracias a su SSD, gráficos 4K, retrocompatibilidad con juegos de PS4 y características como respuesta háptica y audio 3D",
-      "foto": "imgs/ps5.jpg",
+      "foto": "imgs/ps5.webp",
       "envio": true
     }
   ],
@@ -175,7 +175,7 @@
       "marca": "DJI",
       "categoria": "Drones",
       "detalles": "Drone con cámara Hasselblad de 1' CMOS que captura video 4K a 30p y 10 bits de profundidad de color, con un sensor de 20MP y apertura ajustable, además de funciones avanzadas como Hyperlapse y ActiveTrack.",
-      "foto": "imgs/dji-mavic-2-pro.jpg",
+      "foto": "imgs/dji-mavic-2-pro.webp",
       "envio": false
     },
     {
@@ -186,7 +186,7 @@
       "marca": "Samsung",
       "categoria": "Electro",
       "detalles": "Ofrece más que solo imagen, con conexión a internet, sistema operativo Tizen, aplicaciones y funcionalidades como SmartThings para integrar con tu hogar inteligente",
-      "foto": "imgs/smart-tv.avif",
+      "foto": "imgs/smart-tv.webp",
       "envio": true
     },
     {
@@ -197,7 +197,7 @@
       "marca": "PlayStation",
       "categoria": "Entretenimiento",
       "detalles": "Es la consola de videojuegos de última generación de Sony, con dos modelos: la PS5 estándar con lector de discos y la PS5 Digital Edition sin lector. Ofrece tiempos de carga rápidos gracias a su SSD, gráficos 4K, retrocompatibilidad con juegos de PS4 y características como respuesta háptica y audio 3D",
-      "foto": "imgs/ps5.jpg",
+      "foto": "imgs/ps5.webp",
       "envio": true
     }
   ]

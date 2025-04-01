@@ -5,12 +5,10 @@ import { peticionesHttp } from "../helpers/peticiones-http";
 const CarritoContext = createContext();
 
 const CarritoProvider = ({ children }) => {
-
-    const urlCarrito = import.meta.env.VITE_BACKEND_CARRITO
+  const urlCarrito = import.meta.env.VITE_BACKEND_CARRITO;
   const [agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, carrito] =
     useLocalStorage("carrito", []);
 
-  
   function elProductoEstaEnElCarrito(producto) {
     const nuevoArray = carrito.filter((prod) => prod.id === producto.id);
     return nuevoArray.length;
@@ -29,50 +27,42 @@ const CarritoProvider = ({ children }) => {
       productoDeCarrito.cantidad++;
       window.localStorage.setItem("carrito", JSON.stringify(carrito));
     }
-
   };
 
-
   const eliminarProductoDelCarritoContext = (id) => {
-eliminarDelCarrito(id)
-  }
+    eliminarDelCarrito(id);
+  };
 
   const limpiarCarritoContext = () => {
-limpiarCarrito()
-  }
-
+    limpiarCarrito();
+  };
 
   const guardarCarritoBackendContext = async () => {
-
     try {
-        const options = {
-            method: 'POST',
-            headers: {'content-type': 'application/json'},
-            body: JSON.stringify(carrito)
-        }
-    const carritoGuardado = await peticionesHttp(urlCarrito, options)
-    limpiarCarrito()
+      const options = {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(carrito),
+      };
+      const carritoGuardado = await peticionesHttp(urlCarrito, options);
+      limpiarCarrito();
     } catch (error) {
-        console.error('[guardarCarritoBackendContext]', error)
+      console.error("[guardarCarritoBackendContext]", error);
     }
+  };
 
+  const cantidadTotalProductos = carrito.reduce(
+    (total, producto) => total + producto.cantidad,
+    0
+  );
 
-  }
-
-    
-  const cantidadTotalProductos = carrito.reduce((total, producto) => total + producto.cantidad, 0);
-  console.log(cantidadTotalProductos)
-  
-  
-  
-  
-const data = {
+  const data = {
     agregarProductoAlCarritoContext,
     eliminarProductoDelCarritoContext,
     guardarCarritoBackendContext,
     limpiarCarritoContext,
     carrito,
-    cantidadTotalProductos
+    cantidadTotalProductos,
   };
 
   return (

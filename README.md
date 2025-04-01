@@ -1,12 +1,19 @@
-# React + Vite
+### Name: Sofía De Alessandre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Link Github: https://github.com/SofiaDeAlessandre/integrador-etapa-2.git
 
-Currently, two official plugins are available:
+### Link Netlify: https://sofia-de-alessandre-integrador-etapa2.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Description: "Boutique" is an e-commerce of electronics. This allows you to view all products in detail, filter them, add them to cart and add, edit and delete new products. This virtual store uses dinamic rutes, MockApi and responsive design.
 
-## Expanding the ESLint configuration
+#### Technologies: React, SaSS, MockApi
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![](imgs/readme-img-1.png)
+![](imgs/readme-img-2.png)
+![](imgs/readme-img-3.png)
+![](imgs/readme-img-4.png)
+![](imgs/readme-img-5.png)
+![](imgs/readme-img-6.png)
+![](imgs/readme-img-7.png)
+![](imgs/readme-img-8.png)
+![](imgs/readme-img-9.png)

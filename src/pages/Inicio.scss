@@ -1,43 +1,42 @@
 :root {
-    --firstColor: rgb(203, 193, 249);
-    --secondColor: rgb(137, 109, 200);
-    --thirdColor: rgb(68, 28, 146);
-    --fourthColor: rgb(241, 238, 252);
-    --fifthColor: rgb(36, 12, 83);
-  }
- 
- .main-section-cards{
-  min-height: 100vh;
- }
+  --firstColor: rgb(203, 193, 249);
+  --secondColor: rgb(137, 109, 200);
+  --thirdColor: rgb(68, 28, 146);
+  --fourthColor: rgb(241, 238, 252);
+  --fifthColor: rgb(36, 12, 83);
+}
 
-  .section-cards {
-    background-color: var(--fourthColor);
-    padding: 1rem;
-  
-    &__header h1 {
-      text-align: center;
-      color: var(--fifthColor);
-      animation: fadeInScale 2s ease forwards;
-      opacity: 0;
+.main-section-cards {
+  min-height: 100vh;
+}
+
+.section-cards {
+  background-color: var(--fourthColor);
+  padding: 1rem;
+
+  &__header h1 {
+    text-align: center;
+    color: var(--fifthColor);
+    animation: fadeInScale 2s ease forwards;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  @keyframes fadeInScale {
+    from {
       transform: scale(0.5);
+      opacity: 0;
     }
-    @keyframes fadeInScale {
-      from {
-        transform: scale(0.5);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
+    to {
+      transform: scale(1);
+      opacity: 1;
     }
   }
-  
-  .cards-container {
-    background-color: var(--fourthColor);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
+}
+
+.cards-container {
+  background-color: var(--fourthColor);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}

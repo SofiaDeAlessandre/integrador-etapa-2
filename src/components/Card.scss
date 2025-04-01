@@ -1,106 +1,104 @@
-  
-  .card {
-    min-width: 80%;
-    max-width: 90%;
-    height: 40vh;
-    margin: auto;
+.card {
+  min-width: 80%;
+  max-width: 90%;
+  height: 40vh;
+  margin: auto;
+  color: var(--fifthColor);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 7px 8px 0px var(--secondColor);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__heading {
     color: var(--fifthColor);
+    text-align: center;
+  }
+
+  &__price,
+  &__description {
+    margin: 5px;
+  }
+
+  &__button,
+  &__button-detalle {
+    background-color: var(--secondColor);
+    padding: 5px;
     border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 7px 8px 0px var(--secondColor);
-    overflow-y: auto;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  
-    &__image {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  
-    &__heading {
-      color: var(--fifthColor);
-      text-align: center;
-    }
-  
-    &__price,
-    &__description {
-      margin: 5px;
-    }
-  
-    &__button,
-    &__button-detalle {
-      background-color: var(--secondColor);
-      padding: 5px;
-      border-radius: 5px;
-      border-color: var(--secondColor);
-      display: block;
-      margin: auto;
-      margin-bottom: 5px;
+    border-color: var(--secondColor);
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    color: var(--fourthColor);
+    &:hover {
+      cursor: pointer;
+      background-color: var(--fifthColor);
       color: var(--fourthColor);
-      &:hover {
-        cursor: pointer;
-        background-color: var(--fifthColor);
-        color: var(--fourthColor);
-      }
-    }
-  
-    & {
-      background-image: linear-gradient(var(--firstColor), var(--fourthColor));
-    }
-  
-    @media screen and (min-width: 768px) {
-      & {
-        width: 60%;
-        max-width: 70%;
-        height: 20vh;
-      }
-  
-      &__article {
-        display: flex;
-      }
-      &__image-container {
-        overflow: hidden;
-        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-      }
-  
-      &:hover &__image-container,
-      &focus &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      }
-    }
-  
-    @media screen and (min-width: 992px) {
-      & {
-        min-width: 20%;
-        max-width: 30%;
-        height: 35vh;
-      }
-  
-      @media screen and (min-width: 1200px) {
-        & {
-          min-width: 20%;
-          max-width: 25%;
-          height: 30vh;
-        }
-      }
-  
-      &__article {
-        flex-direction: column;
-      }
-  
-      & &__image-container {
-        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
-  
-        &:hover &__image-container,
-        &:focus &__image-container {
-          clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
-        }
-      }
-  
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.4);
-      }
     }
   }
-  
+
+  & {
+    background-image: linear-gradient(var(--firstColor), var(--fourthColor));
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 60%;
+      max-width: 70%;
+      height: 20vh;
+    }
+
+    &__article {
+      display: flex;
+    }
+    &__image-container {
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
+
+    &:hover &__image-container,
+    &focus &__image-container {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    & {
+      min-width: 20%;
+      max-width: 30%;
+      height: 35vh;
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        min-width: 20%;
+        max-width: 25%;
+        height: 30vh;
+      }
+    }
+
+    &__article {
+      flex-direction: column;
+    }
+
+    & &__image-container {
+      clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+
+      &:hover &__image-container,
+      &:focus &__image-container {
+        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

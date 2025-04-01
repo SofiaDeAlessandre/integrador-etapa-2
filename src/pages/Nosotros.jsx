@@ -1,8 +1,8 @@
-import useTitulo from "../hooks/useTitulo"
-import './Nosotros.scss'
+import useTitulo from "../hooks/useTitulo";
+import "./Nosotros.scss";
 
 const Nosotros = () => {
-    useTitulo('Nosotros')
+  useTitulo("Nosotros");
   return (
     <main class="main__acerca">
       <section class="section__acerca">
@@ -12,10 +12,11 @@ const Nosotros = () => {
         </header>
       </section>
       <section class="section__acerca__descripcion">
-        Somos amantes de la teconología, es por eso que queremos garantizarte lo mejor en electro
+        Somos amantes de la teconología, es por eso que queremos garantizarte lo
+        mejor en electro
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default Nosotros
+export default Nosotros;

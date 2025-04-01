@@ -1,41 +1,41 @@
 table.tabla-carrito {
-    border-collapse: collapse;
-    width: 95%;
-    margin: 1rem auto;
+  border-collapse: collapse;
+  width: 95%;
+  margin: 1rem auto;
 }
 td {
-    border: 1px solid var(--firstColor);
-    padding: 8px;
-    text-align: center;
+  border: 1px solid var(--firstColor);
+  padding: 8px;
+  text-align: center;
 }
 
 th {
-    background-color: var(--firstColor);
-    color: var(--fifthColor);
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
+  background-color: var(--firstColor);
+  color: var(--fifthColor);
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
 }
 
-.btn-vaciar-carrito, 
-.btn-comprar{
-    background-color: var(--secondColor);
-    padding: 5px;
-    border-radius: 5px;
-    border-color: var(--secondColor);
-    display: block;
-    margin: auto;
-    margin-bottom: 5px;
+.btn-vaciar-carrito,
+.btn-comprar {
+  background-color: var(--secondColor);
+  padding: 5px;
+  border-radius: 5px;
+  border-color: var(--secondColor);
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  color: var(--fourthColor);
+  &:hover {
+    cursor: pointer;
+    background-color: var(--fifthColor);
     color: var(--fourthColor);
-    &:hover {
-      cursor: pointer;
-      background-color: var(--fifthColor);
-      color: var(--fourthColor);
-    }
   }
+}
 
-  .total,
-  .total_productos{
-    text-align: center;
-    margin: 10px;
-  }
+.total,
+.total_productos {
+  text-align: center;
+  margin: 10px;
+}

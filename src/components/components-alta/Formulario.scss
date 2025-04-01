@@ -1,71 +1,69 @@
-  
-  .form__alta {
-    padding: 50px;
-    width: 30%;
-    margin: auto;
-  
-    &__fieldset {
-      border-radius: 5px;
-      flex-direction: column;
-      gap: 2em;
-      box-shadow: 2px 2px 2px 2px var(--secondColor);
-      background-color: var(--fourthColor);
-      &:focus-within {
-        background-color: var(--firstColor);
-      }
-    }
-  
-    &__legend {
-      text-align: center;
-      padding: 5px;
-      border: 1px solid var(--fifthColor);
-      border-radius: 5px;
-      border-color: black;
-      background-color: var(--secondColor);
-      color: var(--fourthColor);
-      width: 30%;
-      margin: auto;
-    }
-  
-    &__nombre,
-    &__precio,
-    &__stock,
-    &__marca,
-    &__categoria,
-    &__detalles,
-    &__foto,
-    &__envio {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 0.5em;
-      width: 50%;
-      margin: auto;
-    }
-  
-    &__btn {
-      background-color: var(--secondColor);
-      padding: 5px;
-      border-radius: 5px;
-      border-color: var(--secondColor);
-      margin: 5px;
-      color: var(--fourthColor);
-      width: 50%;
-      margin: auto;
-      &:hover {
-        cursor: pointer;
-        background-color: var(--firstColor);
-        color: var(--fifthColor);
-      }
-    }
-  }
-  
-  iframe {
-    @media screen and (min-width: 768px) {
-      & {
-        width: 200px;
-        height: 400px;
-      }
+.form__alta {
+  padding: 50px;
+  width: 30%;
+  margin: auto;
+
+  &__fieldset {
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 2em;
+    box-shadow: 2px 2px 2px 2px var(--secondColor);
+    background-color: var(--fourthColor);
+    &:focus-within {
+      background-color: var(--firstColor);
     }
   }
 
+  &__legend {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--fifthColor);
+    border-radius: 5px;
+    border-color: black;
+    background-color: var(--secondColor);
+    color: var(--fourthColor);
+    width: 30%;
+    margin: auto;
+  }
+
+  &__nombre,
+  &__precio,
+  &__stock,
+  &__marca,
+  &__categoria,
+  &__detalles,
+  &__foto,
+  &__envio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    width: 50%;
+    margin: auto;
+  }
+
+  &__btn {
+    background-color: var(--secondColor);
+    padding: 5px;
+    border-radius: 5px;
+    border-color: var(--secondColor);
+    margin: 5px;
+    color: var(--fourthColor);
+    width: 50%;
+    margin: auto;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--firstColor);
+      color: var(--fifthColor);
+    }
+  }
+}
+
+iframe {
+  @media screen and (min-width: 768px) {
+    & {
+      width: 200px;
+      height: 400px;
+    }
+  }
+}
