@@ -8,12 +8,12 @@
 
 #### Technologies: React, SaSS, MockApi
 
-![](imgs/readme-img-1.png)
-![](imgs/readme-img-2.png)
-![](imgs/readme-img-3.png)
-![](imgs/readme-img-4.png)
-![](imgs/readme-img-5.png)
-![](imgs/readme-img-6.png)
-![](imgs/readme-img-7.png)
-![](imgs/readme-img-8.png)
-![](imgs/readme-img-9.png)
+![](public/imgs/readme-img-1.png)
+![](public/imgs/readme-img-2.png)
+![](public/imgs/readme-img-3.png)
+![](ppublic/imgs/readme-img-4.png)
+![](public/imgs/readme-img-5.png)
+![](public/imgs/readme-img-6.png)
+![](public/imgs/readme-img-7.png)
+![](public/imgs/readme-img-8.png)
+![](public/imgs/readme-img-9.png)
