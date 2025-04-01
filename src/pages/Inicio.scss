@@ -1,12 +1,14 @@
 :root {
-    --firstColor: rgb(231, 195, 187);
-    --secondColor: rgb(174, 144, 139);
-    --thirdColor: rgb(48, 54, 23);
-    --fourthColor: rgb(248, 241, 240);
-    --fifthColor: black;
+    --firstColor: rgb(203, 193, 249);
+    --secondColor: rgb(137, 109, 200);
+    --thirdColor: rgb(68, 28, 146);
+    --fourthColor: rgb(241, 238, 252);
+    --fifthColor: rgb(36, 12, 83);
   }
  
- 
+ .main-section-cards{
+  min-height: 100vh;
+ }
 
   .section-cards {
     background-color: var(--fourthColor);

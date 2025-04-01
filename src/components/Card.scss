@@ -1,10 +1,3 @@
-:root {
-    --firstColor: rgb(231, 195, 187);
-    --secondColor: rgb(174, 144, 139);
-    --thirdColor: rgb(48, 54, 23);
-    --fourthColor: rgb(248, 241, 240);
-    --fifthColor: black;
-  }
   
   .card {
     min-width: 80%;
@@ -34,7 +27,8 @@
       margin: 5px;
     }
   
-    &__button {
+    &__button,
+    &__button-detalle {
       background-color: var(--secondColor);
       padding: 5px;
       border-radius: 5px;
@@ -45,8 +39,8 @@
       color: var(--fourthColor);
       &:hover {
         cursor: pointer;
-        background-color: var(--firstColor);
-        color: var(--fifthColor);
+        background-color: var(--fifthColor);
+        color: var(--fourthColor);
       }
     }
   

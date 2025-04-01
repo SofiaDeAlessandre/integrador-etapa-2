@@ -8,7 +8,7 @@ const SearchBar = ({onFilterTextChange, filterText}) => {
   return (
     <div className="search-bar">
         <div className="search-bar__logo-container">
-          <i className="fa-solid fa-seedling"></i>
+        <i className="fa-solid fa-mobile-screen-button"></i>
         </div>
         <form action="#" className="search-bar__form-container">
           <label htmlFor="busqueda" className="search-bar__form-label">

@@ -3,7 +3,7 @@
     {
       "nombre": "IPhone 15 Pro Max",
       "foto": "imgs/iphone-15-pro.max.webp",
-      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "detalles": "Pantalla Super Retina XDR de 6.7 pulgadas, cámara principal de 48MP, zoom óptico de 5x y procesador A17 Pro, además de contar con un diseño de titanio resistente y opciones de almacenamiento de hasta 1TB",
       "precio": 250.5,
       "stock": "4444",
       "marca": "Apple",
@@ -14,7 +14,7 @@
     {
       "nombre": "IPhone 12",
       "foto": "imgs/iphone-12.webp",
-      "detalles": "Quasi cupiditate quisquam facere molestiae",
+      "detalles": "Pantalla Super Retina XDR OLED de 6.1 pulgadas, procesador A14 Bionic, sistema de cámara dual y resistencia al agua IP68, además de soporte 5G",
       "precio": 240.3,
       "stock": "4",
       "marca": "Apple",
@@ -25,7 +25,7 @@
     {
       "nombre": "Auriculares Sony",
       "foto": "imgs/auriculares-sony.webp",
-      "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+      "detalles": "Sonido de alta calidad, cancelación de ruido, conexión Bluetooth y larga duración de batería, con opciones para diferentes usos, como juegos, música y llamadas. ",
       "precio": 985,
       "stock": 4,
       "marca": "Sleek Cotton Chips",
@@ -35,7 +35,7 @@
     },
     {
       "nombre": "Camara Canon",
-      "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "detalles": "conocida por su calidad de imagen, sistema de enfoque automático y ergonomía, ofreciendo opciones para principiantes y profesionales.",
       "foto": "imgs/camara-canon.webp",
       "precio": 678,
       "stock": 7,
@@ -46,7 +46,7 @@
     },
     {
       "nombre": "Samsung",
-      "detalles": "Facere molestiae odio neque rerum provident voluptas",
+      "detalles": "Las cámara Samsung es por su capacidad para capturar imágenes y videos de alta calidad, con funciones avanzadas de procesamiento de imagen. ",
       "foto": "imgs/celular-samsung.webp",
       "precio": 1200,
       "stock": 4,
@@ -62,7 +62,7 @@
       "stock": 4,
       "marca": "Google",
       "categoria": "Electronica",
-      "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+      "detalles": "Es un dispositivo que permite transmitir contenido de forma inalámbrica desde dispositivos móviles, computadoras o tabletas a un televisor, convirtiéndolo en una Smart TV con acceso a aplicaciones y servicios de streaming",
       "foto": "imgs/chromecast-google.webp",
       "envio": true
     },
@@ -73,7 +73,7 @@
       "stock": 2,
       "marca": "DJI",
       "categoria": "Drones",
-      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "detalles": "Drone con cámara Hasselblad de 1' CMOS que captura video 4K a 30p y 10 bits de profundidad de color, con un sensor de 20MP y apertura ajustable, además de funciones avanzadas como Hyperlapse y ActiveTrack.",
       "foto": "imgs/dji-mavic-2-pro.jpg",
       "envio": false
     },
@@ -84,7 +84,7 @@
       "stock": "2",
       "marca": "Samsung",
       "categoria": "Electro",
-      "detalles": "Piola. 8k",
+      "detalles": "Ofrece más que solo imagen, con conexión a internet, sistema operativo Tizen, aplicaciones y funcionalidades como SmartThings para integrar con tu hogar inteligente",
       "foto": "imgs/smart-tv.avif",
       "envio": true
     },
@@ -95,7 +95,7 @@
       "stock": "2",
       "marca": "PlayStation",
       "categoria": "Entretenimiento",
-      "detalles": "Alta manzana, no papa",
+      "detalles": "Es la consola de videojuegos de última generación de Sony, con dos modelos: la PS5 estándar con lector de discos y la PS5 Digital Edition sin lector. Ofrece tiempos de carga rápidos gracias a su SSD, gráficos 4K, retrocompatibilidad con juegos de PS4 y características como respuesta háptica y audio 3D",
       "foto": "imgs/ps5.jpg",
       "envio": true
     }
@@ -104,7 +104,7 @@
     {
       "nombre": "IPhone 15 Pro Max",
       "foto": "imgs/iphone-15-pro.max.webp",
-      "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+      "detalles": "Pantalla Super Retina XDR de 6.7 pulgadas, cámara principal de 48MP, zoom óptico de 5x y procesador A17 Pro, además de contar con un diseño de titanio resistente y opciones de almacenamiento de hasta 1TB",
       "precio": 250.5,
       "stock": "4444",
       "marca": "Apple",
@@ -115,7 +115,7 @@
     {
       "nombre": "IPhone 12",
       "foto": "imgs/iphone-12.webp",
-      "detalles": "Quasi cupiditate quisquam facere molestiae",
+      "detalles": "Pantalla Super Retina XDR OLED de 6.1 pulgadas, procesador A14 Bionic, sistema de cámara dual y resistencia al agua IP68, además de soporte 5G",
       "precio": 240.3,
       "stock": "4",
       "marca": "Apple",
@@ -126,7 +126,7 @@
     {
       "nombre": "Auriculares Sony",
       "foto": "imgs/auriculares-sony.webp",
-      "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+      "detalles": "Sonido de alta calidad, cancelación de ruido, conexión Bluetooth y larga duración de batería, con opciones para diferentes usos, como juegos, música y llamadas. ",
       "precio": 985,
       "stock": 4,
       "marca": "Sleek Cotton Chips",
@@ -136,7 +136,7 @@
     },
     {
       "nombre": "Camara Canon",
-      "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "detalles": "conocida por su calidad de imagen, sistema de enfoque automático y ergonomía, ofreciendo opciones para principiantes y profesionales.",
       "foto": "imgs/camara-canon.webp",
       "precio": 678,
       "stock": 7,
@@ -147,7 +147,7 @@
     },
     {
       "nombre": "Samsung",
-      "detalles": "Facere molestiae odio neque rerum provident voluptas",
+      "detalles": "Las cámara Samsung es por su capacidad para capturar imágenes y videos de alta calidad, con funciones avanzadas de procesamiento de imagen. ",
       "foto": "imgs/celular-samsung.webp",
       "precio": 1200,
       "stock": 4,
@@ -163,7 +163,7 @@
       "stock": 4,
       "marca": "Google",
       "categoria": "Electronica",
-      "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+      "detalles": "Es un dispositivo que permite transmitir contenido de forma inalámbrica desde dispositivos móviles, computadoras o tabletas a un televisor, convirtiéndolo en una Smart TV con acceso a aplicaciones y servicios de streaming",
       "foto": "imgs/chromecast-google.webp",
       "envio": true
     },
@@ -174,7 +174,7 @@
       "stock": 2,
       "marca": "DJI",
       "categoria": "Drones",
-      "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "detalles": "Drone con cámara Hasselblad de 1' CMOS que captura video 4K a 30p y 10 bits de profundidad de color, con un sensor de 20MP y apertura ajustable, además de funciones avanzadas como Hyperlapse y ActiveTrack.",
       "foto": "imgs/dji-mavic-2-pro.jpg",
       "envio": false
     },
@@ -185,7 +185,7 @@
       "stock": "2",
       "marca": "Samsung",
       "categoria": "Electro",
-      "detalles": "Piola. 8k",
+      "detalles": "Ofrece más que solo imagen, con conexión a internet, sistema operativo Tizen, aplicaciones y funcionalidades como SmartThings para integrar con tu hogar inteligente",
       "foto": "imgs/smart-tv.avif",
       "envio": true
     },
@@ -196,7 +196,7 @@
       "stock": "2",
       "marca": "PlayStation",
       "categoria": "Entretenimiento",
-      "detalles": "Alta manzana, no papa",
+      "detalles": "Es la consola de videojuegos de última generación de Sony, con dos modelos: la PS5 estándar con lector de discos y la PS5 Digital Edition sin lector. Ofrece tiempos de carga rápidos gracias a su SSD, gráficos 4K, retrocompatibilidad con juegos de PS4 y características como respuesta háptica y audio 3D",
       "foto": "imgs/ps5.jpg",
       "envio": true
     }

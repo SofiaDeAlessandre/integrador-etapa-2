@@ -2,6 +2,7 @@ import { useContext } from "react";
 import ProductosContext from "../../contexts/ProductosContext";
 import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
+import './TablaFila.scss'
 
 const TablaFila = ( {producto} ) => {
 
@@ -16,8 +17,8 @@ const handleEliminar = (id) => {
     text: "¡No podrás revertirlo!",
     icon: "warning",
     showCancelButton: true,
-    confirmButtonColor: "rgb(174, 144, 139)",
-    cancelButtonColor: "rgb(132, 109, 104)",
+    confirmButtonColor: "rgb(137, 109, 200)",
+    cancelButtonColor: "rgb(68, 28, 146)",
     confirmButtonText: "Sí, ¡borrar!"
   }).then((result) => {
     if (result.isConfirmed) {
@@ -55,9 +56,9 @@ navigate(`/alta/detalle/${id}`)
         </td>
       <td>{producto.envio ? 'si' : 'no'}</td>
       <td>
-        <button onClick={() => handleVer(producto.id)}>Ver</button>
-        <button onClick={() => handleEditar(producto)}>Editar</button>
-        <button onClick={() => handleEliminar(producto.id)}>Borrar</button>
+        <button className="btn-ver" onClick={() => handleVer(producto.id)}>Ver</button>
+        <button className="btn-editar" onClick={() => handleEditar(producto)}>Editar</button>
+        <button className="btn-borrar" onClick={() => handleEliminar(producto.id)}>Borrar</button>
       </td>
     </tr>
   );

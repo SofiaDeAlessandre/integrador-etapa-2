@@ -14,6 +14,10 @@ const Rutas = ({filterText}) => {
       element: <Inicio filterText={filterText}/>,
     },
     {
+      path: "/detalle/:id",
+      element: <ProductosDetalle />,
+    },
+    {
       path: "/alta",
       element: <Alta />,
     },

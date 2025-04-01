@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Spinner from "../Spinner";
+import './ProductosDetalles.scss'
 
 const ProductosDetalle = () => {
   const { id } = useParams();
@@ -27,14 +28,14 @@ const ProductosDetalle = () => {
   };
 
   return (
-<>
+<main className="main__detalle">
   <h1>Producto Detalle</h1>
   {
     productoDetalle ? (
 <>
 <h2>El nombre del producto: {productoDetalle.nombre}</h2>
 <p>La categoría del producto es: {productoDetalle.categoria}</p>
-<p>El precio: {productoDetalle.precio}</p>
+<p>El precio: ${productoDetalle.precio}</p>
 </>
     ) :
     (
@@ -42,7 +43,7 @@ const ProductosDetalle = () => {
     )
   }
   
-  </>
+  </main>
   )
   
 };

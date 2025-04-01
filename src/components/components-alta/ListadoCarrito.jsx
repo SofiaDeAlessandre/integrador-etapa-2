@@ -3,7 +3,7 @@ import { useContext } from "react"
 import ItemCarrito from "./ItemCarrito"
 import CarritoContext from "../../contexts/CarritoContext"
 import './ListadoCarrito.scss'
-
+import Swal from "sweetalert2";
 
 const ListadoCarrito = () => {
 
@@ -16,12 +16,35 @@ const ListadoCarrito = () => {
     }
     
     const handleLimpiarCarrito = () => {
+Swal.fire({
+    title: "¿Quiere vaciar el carrito?",
+    text: "¡No podrás revertirlo!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "rgb(137, 109, 200)",
+    cancelButtonColor: "rgb(68, 28, 146)",
+    confirmButtonText: "Sí, ¡borrar el carrito!"
+  }).then((result) => {
+    if (result.isConfirmed) {
         limpiarCarritoContext()
+      Swal.fire({
+        title: "¡Vaciado!",
+        text: "El carrito fue vaciado.",
+        icon: "success"
+      });
+    }
+  })
+
     }
 
     const calcularTotal = () => {
         return carrito.reduce((total, producto) => total + (producto.cantidad * producto.precio), 0);
     }
+
+    const calcularTotalProductos = () => {
+        return carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    }
+
 
   return (
     <>
@@ -53,11 +76,15 @@ const ListadoCarrito = () => {
     <hr />
     { !carrito.length <= 0 && (
             <>
-                <button onClick={handleLimpiarCarrito}>Vaciar Carrito</button>
-                <button onClick={handleComprar}>Comprar</button>
+                <button className="btn-vaciar-carrito" onClick={handleLimpiarCarrito}>Vaciar Carrito</button>
+                <button className="btn-comprar" onClick={handleComprar}>Comprar</button>
                 <div className="total">
-                        <strong>Total: </strong>
+                        <strong>Precio Total: </strong>
                         ${calcularTotal().toFixed(2)}
+                    </div>
+                    <div className="total_productos">
+                        <strong>Total de productos: </strong>
+                        {calcularTotalProductos()}
                     </div>
             </>
         )

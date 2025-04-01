@@ -2,18 +2,27 @@
     overflow-x: auto;
     width: 90%; 
     height: 400px;
+    margin: auto;
   }
 .tabla-alta {
-    border: 1px solid black;
     border-collapse: collapse;
     width: 95%;
     margin: 1rem auto;
    
-    th, td {
+     td {
+        border: 1px solid var(--firstColor);
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: var(--firstColor);
+        color: var(--fifthColor);
         border: 1px solid black;
         padding: 8px;
-        text-align: left;
+        text-align: center;
     }
+
 }
 .img-tabla{
     width: 50px;

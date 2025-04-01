@@ -5,6 +5,7 @@ import { peticionesHttp } from "../helpers/peticiones-http";
 const CarritoContext = createContext();
 
 const CarritoProvider = ({ children }) => {
+
     const urlCarrito = import.meta.env.VITE_BACKEND_CARRITO
   const [agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, carrito] =
     useLocalStorage("carrito", []);
@@ -28,7 +29,7 @@ const CarritoProvider = ({ children }) => {
       productoDeCarrito.cantidad++;
       window.localStorage.setItem("carrito", JSON.stringify(carrito));
     }
-    
+
   };
 
 
@@ -58,9 +59,14 @@ limpiarCarrito()
 
   }
 
+    
   const cantidadTotalProductos = carrito.reduce((total, producto) => total + producto.cantidad, 0);
-
-  const data = {
+  console.log(cantidadTotalProductos)
+  
+  
+  
+  
+const data = {
     agregarProductoAlCarritoContext,
     eliminarProductoDelCarritoContext,
     guardarCarritoBackendContext,

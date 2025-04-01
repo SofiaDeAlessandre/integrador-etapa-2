@@ -53,7 +53,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
 
   return (
     <>
-      <h2>Agregar: Editar</h2>
+      <h2>{productoAEditar ? "Editar" : "Crear"}</h2>
       <form className="form__alta" onSubmit={handleSubmit}>
       <fieldset className="form__alta__fieldset">
       <legend className="form__alta__legend">Datos de producto</legend>
@@ -145,7 +145,7 @@ productoAEditar ? setForm(productoAEditar) : setForm(formInicial)
           />
         </div>
         
-        <button className="form__alta__btn"  type="submit">Guardar : Editar</button>
+        <button className="form__alta__btn"  type="submit">{productoAEditar ? "Editar" : "Crear"}</button>
         <button className="form__alta__btn" type="reset" onClick={handleReset}>Limpiar</button>
         
         </fieldset>
