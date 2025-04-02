@@ -13,7 +13,7 @@ const ProductosDetalle = () => {
   }, []);
 
   const getOne = async (id) => {
-    const urlGetOne = "https://67ec5e9baa794fb3222da722.mockapi.io/api/v1/productos/" + id;
+    const urlGetOne = import.meta.env.VITE_BACKEND_PRODUCTOS + id;
     try {
       const res = await fetch(urlGetOne);
       if (!res.ok) {
