@@ -55,6 +55,7 @@ const CarritoProvider = ({ children }) => {
     (total, producto) => total + producto.cantidad,
     0
   );
+  
 
   const data = {
     agregarProductoAlCarritoContext,

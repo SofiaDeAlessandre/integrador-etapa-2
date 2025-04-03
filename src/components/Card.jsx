@@ -5,7 +5,6 @@ import { useNavigate } from "react-router";
 
 const Card = ({ producto }) => {
   const navigate = useNavigate();
-
   const { agregarProductoAlCarritoContext } = useContext(CarritoContext);
 
   const handleAgregar = (producto) => {

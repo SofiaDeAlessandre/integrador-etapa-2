@@ -4,6 +4,7 @@ import CarritoContext from "../contexts/CarritoContext";
 import { useContext } from "react";
 
 const SearchBar = ({ onFilterTextChange, filterText }) => {
+  const { quantity } = useContext(CarritoContext);
   const { cantidadTotalProductos } = useContext(CarritoContext);
   return (
     <div className="search-bar">
