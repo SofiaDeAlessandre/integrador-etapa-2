@@ -8,7 +8,7 @@
       "stock": "4444",
       "marca": "Apple",
       "categoria": "celulares",
-      "id": 1,
+      "id": "1",
       "envio": false
     },
     {
@@ -19,7 +19,7 @@
       "stock": "4",
       "marca": "Apple",
       "categoria": "celulares",
-      "id": 2,
+      "id": "2",
       "envio": true
     },
     {
@@ -30,19 +30,8 @@
       "stock": 4,
       "marca": "Sleek Cotton Chips",
       "categoria": "Refined",
-      "id": 3,
+      "id": "3",
       "envio": false
-    },
-    {
-      "nombre": "Camara Canon",
-      "detalles": "conocida por su calidad de imagen, sistema de enfoque automático y ergonomía, ofreciendo opciones para principiantes y profesionales.",
-      "foto": "imgs/camara-canon.webp",
-      "precio": 678,
-      "stock": 7,
-      "marca": "Rustic Soft Tuna",
-      "categoria": "Generic",
-      "id": 4,
-      "envio": true
     },
     {
       "nombre": "Samsung",
@@ -52,11 +41,11 @@
       "stock": 4,
       "marca": "Samsung",
       "categoria": "celulares",
-      "id": 5,
+      "id": "5",
       "envio": true
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Chromecast",
       "precio": 332.22,
       "stock": 4,
@@ -67,7 +56,7 @@
       "envio": true
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "DJI Mavic 2 pro",
       "precio": 333.22,
       "stock": 2,
@@ -78,7 +67,7 @@
       "envio": false
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Smart tv",
       "precio": "2333",
       "stock": "2",
@@ -89,7 +78,7 @@
       "envio": true
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "PlayStation 5",
       "precio": "22",
       "stock": "2",
@@ -98,6 +87,17 @@
       "detalles": "Es la consola de videojuegos de última generación de Sony, con dos modelos: la PS5 estándar con lector de discos y la PS5 Digital Edition sin lector. Ofrece tiempos de carga rápidos gracias a su SSD, gráficos 4K, retrocompatibilidad con juegos de PS4 y características como respuesta háptica y audio 3D",
       "foto": "imgs/ps5.webp",
       "envio": true
+    },
+    {
+      "id": "52e0",
+      "nombre": "",
+      "precio": "",
+      "stock": "",
+      "marca": "",
+      "categoria": "",
+      "detalles": "",
+      "foto": "",
+      "envio": false
     }
   ],
   "carrito": [
@@ -109,7 +109,7 @@
       "stock": "4444",
       "marca": "Apple",
       "categoria": "celulares",
-      "id": 1,
+      "id": "1",
       "envio": false
     },
     {
@@ -120,7 +120,7 @@
       "stock": "4",
       "marca": "Apple",
       "categoria": "celulares",
-      "id": 2,
+      "id": "2",
       "envio": true
     },
     {
@@ -131,7 +131,7 @@
       "stock": 4,
       "marca": "Sleek Cotton Chips",
       "categoria": "Refined",
-      "id": 3,
+      "id": "3",
       "envio": false
     },
     {
@@ -142,7 +142,7 @@
       "stock": 7,
       "marca": "Rustic Soft Tuna",
       "categoria": "Generic",
-      "id": 4,
+      "id": "4",
       "envio": true
     },
     {
@@ -153,11 +153,11 @@
       "stock": 4,
       "marca": "Samsung",
       "categoria": "celulares",
-      "id": 5,
+      "id": "5",
       "envio": true
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Chromecast",
       "precio": 332.22,
       "stock": 4,
@@ -168,7 +168,7 @@
       "envio": true
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "DJI Mavic 2 pro",
       "precio": 333.22,
       "stock": 2,
@@ -179,7 +179,7 @@
       "envio": false
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "Smart tv",
       "precio": "2333",
       "stock": "2",
@@ -190,7 +190,7 @@
       "envio": true
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "PlayStation 5",
       "precio": "22",
       "stock": "2",
