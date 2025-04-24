@@ -1,3 +1,4 @@
+import { peticionesHttp } from '../../helpers/peticiones-http'
 import './DragDrop.scss'
 
 
@@ -16,14 +17,39 @@ const DragDrop = ({setFoto, srcImagenBack, setSrcImagenBack}) => {
     const handleChange = () => {
         
     }
-   const handleFiles = (files) => {
+   const handleFiles = async (files) => {
     const file = files[0]
-    uploadFile(file)
+    await uploadFile(file)
     previewFile(file)
    }
 
-   const uploadFile = (file) => {
+   const uploadFile = async (file) => {
 console.log('Llegó a upload', file)
+const url = import.meta.env.VITE_BACKEND_UPLOAD
+try {
+    const formData = new FormData()
+formData.append('imagen', file)
+
+const options = {
+    method: 'POST',
+    body: formData
+}
+
+const imagenUp = await peticionesHttp(url, options)
+console.log(imagenUp)
+setFoto(imagenUp)
+} 
+
+catch (error) {
+    console.error('[uploadFile]', error)
+}
+
+
+
+
+
+peticionesHttp
+
    }
 
 

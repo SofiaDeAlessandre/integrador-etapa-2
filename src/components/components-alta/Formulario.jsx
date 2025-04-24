@@ -29,17 +29,20 @@ const Formulario = () => {
 
   const [form, setForm] = useState(formInicial);
 
-const [foto, setFoto] = useState('')
-const [srcImagenBack, setSrcImagenBack] = useState('')
+  const placeHolderImagen = 'http://localhost:8080/uploads/placeholderimagen.webp'
+  const [foto, setFoto] = useState(placeHolderImagen)
+  const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen)
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (form.id === null) {
-      crearProductoContext(form);
-    } else {
-      actualizarProductoContext(form);
-    }
+      const productoNuevoConImagen = {...form, ...foto}
+      crearProductoContext(productoNuevoConImagen)
+  } else {
+      const productoNuevoConImagen = {...form, ...foto}
+      actualizarProductoContext(productoNuevoConImagen)
+  }
   };
 
   const handleChange = (e) => {
@@ -53,6 +56,8 @@ const [srcImagenBack, setSrcImagenBack] = useState('')
   const handleReset = () => {
     setForm(formInicial);
     setProductoAEditar(null);
+    setFoto(placeHolderImagen);
+    setSrcImagenBack(placeHolderImagen)
   };
 
   return (

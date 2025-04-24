@@ -89,14 +89,14 @@
       "envio": true
     },
     {
-      "id": "52e0",
+      "id": "29df",
       "nombre": "",
       "precio": "",
       "stock": "",
       "marca": "",
       "categoria": "",
       "detalles": "",
-      "foto": "",
+      "foto": "http://localhost:8080/uploads/82b29851-edcc-4d30-a843-fe9509e3eb70.png",
       "envio": false
     }
   ],
