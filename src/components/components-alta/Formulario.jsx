@@ -29,20 +29,21 @@ const Formulario = () => {
 
   const [form, setForm] = useState(formInicial);
 
-  const placeHolderImagen = 'http://localhost:8080/uploads/placeholderimagen.webp'
-  const [foto, setFoto] = useState(placeHolderImagen)
-  const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen)
+  const placeHolderImagen =
+    "http://localhost:8080/uploads/placeholderimagen.webp";
+  const [foto, setFoto] = useState({ foto: placeHolderImagen });
+  const [srcImagenBack, setSrcImagenBack] = useState(placeHolderImagen);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (form.id === null) {
-      const productoNuevoConImagen = {...form, ...foto}
-      crearProductoContext(productoNuevoConImagen)
-  } else {
-      const productoNuevoConImagen = {...form, ...foto}
-      actualizarProductoContext(productoNuevoConImagen)
-  }
+      const productoNuevoConImagen = { ...form, ...foto };
+      crearProductoContext(productoNuevoConImagen);
+    } else {
+      const productoNuevoConImagen = { ...form, ...foto };
+      actualizarProductoContext(productoNuevoConImagen);
+    }
   };
 
   const handleChange = (e) => {
@@ -56,8 +57,8 @@ const Formulario = () => {
   const handleReset = () => {
     setForm(formInicial);
     setProductoAEditar(null);
-    setFoto(placeHolderImagen);
-    setSrcImagenBack(placeHolderImagen)
+    setFoto({ foto: placeHolderImagen });
+    setSrcImagenBack(placeHolderImagen);
   };
 
   return (
@@ -132,7 +133,11 @@ const Formulario = () => {
             />
           </div>
 
-<DragDrop setFoto={setFoto} srcImagenBack={srcImagenBack} setSrcImagenBack={setSrcImagenBack}/>
+          <DragDrop
+            setFoto={setFoto}
+            srcImagenBack={srcImagenBack}
+            setSrcImagenBack={setSrcImagenBack}
+          />
           <div className="form__alta__envio">
             <label htmlFor="lbl-envio">Envío</label>
             <input
